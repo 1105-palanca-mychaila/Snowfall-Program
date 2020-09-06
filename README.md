@@ -29,6 +29,8 @@ Example (the highlighted part is what the program displays and the italicized pa
 An example executable is provided in this repository. You should be able to run it from your project folder.
 If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x orderExecutable``` into the terminal and try running the executable again.
 ### Hints:
+- The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
+- The double lines are equals (=) and the single lines are dashes (-).
 - Make sure you try out different test cases!
 - Play close attention to using scanf with variables.
 - Make sure you control the formatting of any floating-point output. 
