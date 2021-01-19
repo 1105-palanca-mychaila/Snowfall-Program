@@ -4,30 +4,31 @@
 The goal of this project is to:
 1.	Familiarize students with **variables**
 2.  Familiarize students with the **printf** and **scanf** functions.
+3.  Familiarize students with **arithmetics expressions**.
 ### Important Notes:
-1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. Your assignment will be auto-graded and any changes in formatting will result in a loss in the grade.
+1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```order.c```
+3.	**Filename**: Save your program as ```reservations.c```
 
 ## Program
-Welcome to McKeith’s! May I take your order?  
+Leave the lights on!  
 
-We’re going to build a program for a fast food chain to take orders for four people at a time.   
+We’re going to build a program for managing room reservations.   
 
 **The program should behave as follows:**  
-We’ll be getting the customer’s combo choice in the form of a single digit number between 1 and 9. We’ll also be getting the size of the combo, which should be one of the following characters: S M or L (for Small, Medium, or Large). Then we’ll get the price of the combo, in dollars and cents. We’ll do that for all four customers.  
+We’ll be getting the customer’s number of nights and we’ll also be getting the price of the room for one night. Then we’ll get the type of the room, which should be one of the following characters: D Q or K (for Double, Queen, or King). We’ll do that for all four reservations.  
 
-The program should then display the order back to the user! It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
+The program should then display the reservations back to the user, including the total price for their stay! It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
 
 ### Input:
-The user should be prompted for a set of three values which represent the combo number, its size, and its price for the first order. The combo should be a whole number. The size should be a single character. The price should be a decimal number. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three orders.  
+The user should be prompted for a set of three values which represent the number of nights, the price per night, and the room type for the first reservation. The number of nights should be a whole number. The price per night should be a decimal number. The room type should be a single character. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three reservations.  
 
 Example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Order 1 (combo# size price): ``` *4 M 4.32*
+```Reservation 1 (#nights price type): ``` *3 59.99 D*
 
 ### The example executable:
 An example executable is provided in this repository. You should be able to run it from your project folder.
-If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x orderExecutable``` into the terminal and try running the executable again.
+If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x reservationsExecutable``` into the terminal and try running the executable again.
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
 - The double lines are equals (=) and the single lines are dashes (-).
