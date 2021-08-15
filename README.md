@@ -8,27 +8,27 @@ The goal of this project is to:
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```order.c```
+3.	**Filename**: Save your program as ```inventory.c```
 
 ## Program
-Welcome to McKeith’s! May I take your order?  
+Welcome to Warehouse 135!  
 
-We’re going to build a program for a fast food chain to take orders.
+We’re going to build a program for entering inventory.
 
 **The program should behave as follows:**  
-We’ll be getting the customer’s combo choice in the form of a single digit number between 1 and 9. We’ll also be getting the size of the combo, which should be one of the following characters: S M or L (for Small, Medium, or Large). Then we’ll get the price of the combo, in dollars and cents. We’ll do that for all four customers.  
+We’ll be getting the inventory in the form of a item amount. We’ll also be getting the item code, which should be one a letter. Then we’ll get the price of the item, in dollars and cents. We’ll do that for all four different inventory items.  
 
-The program should then display the order back to the user, including the total price for their order! It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
+The program should then display the inventory back to the user, including the total price for everything in the warehouse. It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
 
 ### Input:
-The user should be prompted for a set of three values which represent the combo number, its size, and its price for the first order. The combo should be a whole number. The size should be a single character. The price should be a decimal number. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three orders.  
+The user should be prompted for a set of three values which represent the inventory quantity, code, and its price for the first item. The quantity should be a whole number. The code should be a single character. The price should be a decimal number. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three items.  
 
 Example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Order 1 (combo# size price): ``` *4 M 4.32*
+```Item 1 (quantity code price): ``` *4 M 4.32*
 
 ### The example executable:
 An example executable is provided in this repository. You should be able to run it from your project folder.
-If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x orderExecutable``` into the terminal and try running the executable again.
+If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x inventoryExecutable``` into the terminal and try running the executable again.
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
 - The double lines are equals (=) and the single lines are dashes (-).
