@@ -7,28 +7,28 @@ The goal of this project is to:
 3.  Familiarize students with **arithmetic expressions**.
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
-2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```inventory.c```
+2.	**Comments**: Header comments are required on all files and comments recommended for the rest of the program. Points will be deducted if no header comments are included.
+3.	**Filename**: Save your program as ```colors.c```
 
 ## Program
-Welcome to Warehouse 135!  
+I can see your true colors: ROYGBIV!  
 
-We’re going to build a program for entering inventory.
+We’re going to build a program to survey favorite colors.
 
 **The program should behave as follows:**  
-We’ll be getting the inventory in the form of a item amount. We’ll also be getting the price of the item, in dollars and cents. Then we’ll get the item code, which should be one letter. We’ll do that for all four different inventory items.  
+We’ll be getting the favorite color in the form of an initial (ROYGBIV are each letters that stand for colors of the rainbow). We’ll also be getting the number of people who say that is their favorite color. We’ll do that for three different colors.  
 
-The program should then display the inventory back to the user, including the total price for everything in the warehouse. It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
+The program should then display the color data back to the user, including the percentage of people who liked that color (out of the total number of people). It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques you learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
 
 ### Input:
-The user should be prompted for a set of three values which represent the inventory quantity, price, and its code for the first item. The quantity should be a whole number. The price should be a decimal number. The code should be a single character. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three items.  
+The user should be prompted for a set of two values which represent the color and the number of people. The user should enter both values on one line, separated by a space. The user should then be prompted for the remaining two color data.  
 
 Example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Item 1 (quantity code price): ``` *4 4.32 M*
+```First favorite color and number of people: ``` *R 14*
 
 ### The example executable:
 An example executable is provided in this repository. You should be able to run it from your project folder.
-If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x inventoryExecutable``` into the terminal and try running the executable again.
+If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x colorExecutable``` into the terminal and try running the executable again.
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
 - The double lines are equals (=) and the single lines are dashes (-).
