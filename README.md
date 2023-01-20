@@ -25,7 +25,10 @@ The user should enter all three values on one line, separated by spaces. The use
 ```Roses (#flowers price color): ``` *3 .99 Y*
 
 ### Example Program Execution:
-This is just one example of how the program should run. Your program should be able to handle any input that is entered in the correct format.
+***This is just one example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
+
+![flowersExecutable](https://user-images.githubusercontent.com/2504089/213598750-4a96de00-f53a-41cd-9cb0-3d22cc1486b2.png)
+
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
 - The double lines are equals (=) and the single lines are dashes (-).
