@@ -8,32 +8,29 @@ The goal of this project is to:
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and comments recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```reservations.c```
+3.	**Filename**: Save your program as ```flowers.c```
 
 ## Program
-Leave the lights on!  
+A flower by any other name would smell as sweet!  
 
-We’re going to build a program for managing room reservations.   
+We’re going to build a program for managing flower orders.   
 
 **The program should behave as follows:**  
-We’ll be getting the customer’s number of nights and we’ll also be getting the price of the room for one night. Then we’ll get the type of the room, which should be one of the following characters: D Q or K (for Double, Queen, or King). We’ll do that for all four reservations.  
+We’ll be getting the customer’s number of flowers and we’ll also be getting the price for each flower. Then we’ll get the color of the flower, which should be one of the following characters: R, O, Y, G, B, I, or V (the colors of the rainbow). We’ll do that for all three flowers.  
 
-The program should then display the reservations back to the user, including the total price for their stay! It should display each of the items in a table that the program creates. Please run the provided executable for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
+The program should then display the flower orders back to the user, including the total price for their flowers! It should display each of the items in a table that the program creates. Please refer to the provided screenshots for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
 
-### Input:
-The user should be prompted for a set of three values which represent the number of nights, the price per night, and the room type for the first reservation. The number of nights should be a whole number. The price per night should be a decimal number. The room type should be a single character. The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three reservations.  
+### Input Requirements
+The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three reservations. For example (the highlighted part is what the program displays and the italicized part is the user input):  
+```Roses (#flowers price color): ``` *3 .99 Y*
 
-Example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Reservation 1 (#nights price type): ``` *3 59.99 D*
-
-### The example executable:
-An example executable is provided in this repository. You should be able to run it from your project folder.
-If you encounter a “permission denied” error when attempting to run the executable, type ```chmod u+x reservationsExecutable``` into the terminal and try running the executable again.
+### Example Program Execution:
+This is just one example of how the program should run. Your program should be able to handle any input that is entered in the correct format.
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
 - The double lines are equals (=) and the single lines are dashes (-).
 - Make sure you try out different test cases!
-- Play close attention to using scanf with variables.
+- Play close attention to using scanf with variables, especially blank spaces and endlines.
 - Make sure you control the formatting of any floating-point output. 
 
 ## Submission details
