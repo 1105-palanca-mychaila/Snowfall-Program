@@ -4,30 +4,38 @@
 The goal of this project is to:
 1.	Familiarize students with **variables**
 2.  Familiarize students with the **printf** and **scanf** functions.
-3.  Familiarize students with **arithmetic expressions**.
+
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and comments recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```flowers.c```
+3.	**Filename**: Save your program as ```birds.c```
 
 ## Program
-A flower by any other name would smell as sweet!  
+Let's go birding!  
 
-We’re going to build a program for managing flower orders.   
+We’re going to build a program to help manage data collection for bird surveys.  
+![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/766ee73a-ed03-499b-ba26-6d3d2fe02db1)
 
-**The program should behave as follows:**  
-We’ll be getting the customer’s number of flowers and we’ll also be getting the price for each flower. Then we’ll get the color of the flower, which should be one of the following characters: R, O, Y, G, B, I, or V (the colors of the rainbow). We’ll do that for all three flowers.  
 
-The program should then display the flower orders back to the user, including the total price for their flowers! It should display each of the items in a table that the program creates. Please refer to the provided screenshots for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be exactly the same as the table in the provided program.**
+**The Problem**  
+Biologists use real alpha codes to track the type of bird, but we'll use the following: 
+- G: goose
+- D: duck
+- B: blackbird
+- M: magpie
 
-### Input Requirements
-The user should enter all three values on one line, separated by spaces. The user should then be prompted for the remaining three reservations. For example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Roses (#flowers price color): ``` *3 .99 Y*
+In addition to the bird codes, we'll want to track how old they are and how much they weigh (in ounces). Let's collect this data for 4 birds, then display it in a table.  
+
+### Requirements
+For each bird, the user should enter all three values on one line, separated by spaces. For example (the highlighted part is what the program displays and the italicized part is the user input):  
+```Bird 1 (age code weight): ``` *3 B 2.8*
+
+Please refer to the following screenshot for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be in exactly the same format as the table in the provided program.**
 
 ### Example Program Execution:
 ***This is just one example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
 
-![flowersExecutable](https://user-images.githubusercontent.com/2504089/213598750-4a96de00-f53a-41cd-9cb0-3d22cc1486b2.png)
+![birdsExecutable](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/02d65a95-bc59-4dfc-bbc3-0dbdaccb53fb)
 
 ### Hints:
 - The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
