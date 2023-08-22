@@ -2,47 +2,48 @@
 
 ## Project Goals
 The goal of this project is to:
-1.	Familiarize students with **variables**
-2.  Familiarize students with the **printf** and **scanf** functions.
+1.	Familiarize students with **selection**.
+2.	Familiarize students with **expressions**.
+3.  Provide students with continued practice with **variables**.
+4.  Provide students with continued practice with **formatted IO**.
 
 ### Important Notes:
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
-2.	**Comments**: Header comments are required on all files and comments recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```birds.c```
+2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
+3.	**Filename**: Save your program as ```freezeria.c```
 
 ## Program
-Let's go birding!  
+![erins_freezeria](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/f0488b64-b549-4505-9f39-cf808ab3d984)
+Let's build a game to test our ability to remember ice cream sundae orders.  
 
-We’re going to build a program to help manage data collection for bird surveys.  
-![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/766ee73a-ed03-499b-ba26-6d3d2fe02db1)
-
-
-**The Problem**  
-Biologists use real alpha codes to track the type of bird, but we'll use the following: 
-- G: goose
-- D: duck
-- B: blackbird
-- M: magpie
-
-In addition to the bird codes, we'll want to track how old they are and how much they weigh (in ounces). Let's collect this data for 4 birds, then display it in a table.  
+**The program should behave as follows:**  
+The program should display a customer's order to the player. When the player is ready, the screen should clear and the player should be asked about the customer's order. After they enter it, the player's score is displayed.
 
 ### Requirements
-For each bird, the user should enter all three values on one line, separated by spaces. For example (the highlighted part is what the program displays and the italicized part is the user input):  
-```Bird 1 (age code weight): ``` *3 B 2.8*
+For this version of our game, the customer's order should always be the same:
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/b8ea0715-3838-4f32-818f-b05f9aae8fc1)
+When the player types 'Y' for YES, the screen should clear (we went over how to do this in class).  
 
-Please refer to the following screenshot for an example of the table’s format. Use the formatting techniques learned for conversion specifiers and formatted IO. **Your program’s table should be in exactly the same format as the table in the provided program.**
+The scoring is outlined in the following table:  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/285a66dc-ffd3-4e75-9ed5-eef6c98c95b4)
 
+The valid entry is outlined in the following table:  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/82dd6f6c-ef46-45f2-8154-ff02a7f4f755)
+
+
+After the player "makes" the order, they should get their score and some feedback, as shown below.  
 ### Example Program Execution:
-***This is just one example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
-
-![birdsExecutable](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/02d65a95-bc59-4dfc-bbc3-0dbdaccb53fb)
+***These are just a few example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
+When the player gets the order right:  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/26368113-0cd9-47a3-a5ee-4439c6a3d862)  
+When the player gets it mostly right:  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a6e5fb94-2da0-4150-82e1-90f604c5a23c)  
+When the player gets it all wrong:  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a9cc42be-e2a0-4d6b-a391-b0596e044e2f)  
 
 ### Hints:
-- The vertical line is called a pipe. It's on your keyboard, if you use the Shift + \ key (above the Enter key).
-- The double lines are equals (=) and the single lines are dashes (-).
-- Make sure you try out different test cases!
-- Play close attention to using scanf with variables, especially blank spaces and endlines.
-- Make sure you control the formatting of any floating-point output. 
+- Use ```system("clear");``` to clear the screen in the Linux terminal.  
+- The ```system("clear");``` function requires the ```stdlib.h``` to be included.  
 
 ## Submission details
 To submit your project, you will have to use git on your VirtualBox installation:
