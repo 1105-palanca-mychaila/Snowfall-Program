@@ -16,10 +16,10 @@ The goal of this project is to:
 ![erins_freezeria](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/f0488b64-b549-4505-9f39-cf808ab3d984)
 Let's build a game to test our ability to remember ice cream sundae orders.  
 
-**The program should behave as follows:**  
+### The program should behave as follows
 The program should display a customer's order to the player. When the player is ready, the screen should clear and the player should be asked about the customer's order. After they enter it, the player's score is displayed.
 
-### Requirements
+## Requirements
 For this version of our game, the customer's order should always be the same:
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/b8ea0715-3838-4f32-818f-b05f9aae8fc1)
 When the player types 'Y' for YES, the screen should clear (we went over how to do this in class).  
@@ -30,20 +30,26 @@ The scoring is outlined in the following table:
 The valid entry is outlined in the following table:  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/82dd6f6c-ef46-45f2-8154-ff02a7f4f755)
 
+After the player "makes" the order, they should get their score and some feedback.
 
-After the player "makes" the order, they should get their score and some feedback, as shown below.  
-### Example Program Execution:
+### Hints:
+- Use ```system("clear");``` to clear the screen in the Linux terminal.  
+- The ```system("clear");``` function requires the ```stdlib.h``` to be included.
+  
+## Example Program Execution
+### An example executable is provided in this repository.
+- You should be able to run it from your project folder in a Linux environment. 
+- If you encounter a “permission denied” error when attempting to run the executable, type  
+```chmod u+x statsExecutable```  
+into the terminal and try running the executable again.
+ 
 ***These are just a few example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
 When the player gets the order right:  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/26368113-0cd9-47a3-a5ee-4439c6a3d862)  
 When the player gets it mostly right:  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a6e5fb94-2da0-4150-82e1-90f604c5a23c)  
 When the player gets it all wrong:  
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a9cc42be-e2a0-4d6b-a391-b0596e044e2f)  
-
-### Hints:
-- Use ```system("clear");``` to clear the screen in the Linux terminal.  
-- The ```system("clear");``` function requires the ```stdlib.h``` to be included.  
+![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a9cc42be-e2a0-4d6b-a391-b0596e044e2f)
 
 ## Submission details
 To submit your project, you will have to use git on your VirtualBox installation:
