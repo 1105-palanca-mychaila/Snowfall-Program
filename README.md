@@ -25,7 +25,7 @@ For this version of our game, the customer's order should always be the same:
 When the player types 'Y' for YES, the screen should clear (we went over how to do this in class).  
 
 The scoring is outlined in the following table:  
-![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/acb24028-6772-43d6-8556-6ad7845773b2)
+![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/c12eab1b-00c0-410e-9381-e07617a39d07)
 
 The valid entry is outlined in the following table:  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/82dd6f6c-ef46-45f2-8154-ff02a7f4f755)
