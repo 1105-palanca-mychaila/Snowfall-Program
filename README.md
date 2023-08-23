@@ -7,7 +7,7 @@ The goal of this project is to:
 3.  Provide students with continued practice with **variables**.
 4.  Provide students with continued practice with **formatted IO**.
 
-### Important Notes:
+### Important Notes
 1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
 2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
 3.	**Filename**: Save your program as ```freezeria.c```
@@ -32,7 +32,7 @@ The valid entry is outlined in the following table:
 
 After the player "makes" the order, they should get their score and some feedback.
 
-### Hints:
+### Hints
 - Use ```system("clear");``` to clear the screen in the Linux terminal.  
 - The ```system("clear");``` function requires the ```stdlib.h``` to be included.
   
@@ -40,7 +40,7 @@ After the player "makes" the order, they should get their score and some feedbac
 ### An example executable is provided in this repository.
 - You should be able to run it from your project folder in a Linux environment. 
 - If you encounter a “permission denied” error when attempting to run the executable, type  
-```chmod u+x statsExecutable```  
+```chmod u+x freezeriaExecutable```  
 into the terminal and try running the executable again.
  
 ***These are just a few example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
@@ -51,8 +51,8 @@ When the player gets it mostly right:
 When the player gets it all wrong:  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a9cc42be-e2a0-4d6b-a391-b0596e044e2f)
 
-## Submission details
-To submit your project, you will have to use git on your VirtualBox installation:
+## Submission Details
+If you are usinng git from the command line, execute the following commands:
 1.	After accepting the assignment invitation, copy the clone URL
 2.	Type 
 ```git clone clone URL```
