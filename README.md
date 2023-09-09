@@ -21,20 +21,24 @@ The program should display a customer's order to the player. When the player is 
 
 ## Requirements
 For this version of our game, the customer's order should always be the same:
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/b8ea0715-3838-4f32-818f-b05f9aae8fc1)
+<img width="494" alt="image" src="https://github.com/CSE-UNR/cs135-pa1/assets/2504089/6656d936-6f2d-4aa4-98eb-72283a049462">  
 When the player types 'Y' for YES, the screen should clear (we went over how to do this in class).  
 
-The scoring is outlined in the following table:  
-![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/c12eab1b-00c0-410e-9381-e07617a39d07)
-
-The valid entry is outlined in the following table:  
+Valid entries are outlined in the following table (only capital letters should be allowed):  
 ![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/82dd6f6c-ef46-45f2-8154-ff02a7f4f755)
 
-After the player "makes" the order, they should get their score and some feedback.
+Scoring for individual items is outlined in the following table:  
+![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/c12eab1b-00c0-410e-9381-e07617a39d07)
+
+Final score tiers are outlined in the following table:  
+<img width="450" alt="image" src="https://github.com/CSE-UNR/cs135-pa1/assets/2504089/87f6ae9e-e17b-4ca9-b677-34672ff1475f">  
+
+After the player "makes" the order, they should see their score and some feedback.
 
 ### Hints
+- Run the executable with all the combinations to see the messages you're supposed to display!
 - Use ```system("clear");``` to clear the screen in the Linux terminal.  
-- The ```system("clear");``` function requires the ```stdlib.h``` to be included.
+- The ```system("clear");``` function requires the ```stdlib.h``` to be included in your program.
   
 ## Example Program Execution
 ### An example executable is provided in this repository.
