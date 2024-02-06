@@ -2,59 +2,50 @@
 
 ## Project Goals
 The goal of this project is to:
-1.	Familiarize students with **selection**.
+1.	Familiarize students with **variables**.
 2.	Familiarize students with **expressions**.
-3.  Provide students with continued practice with **variables**.
-4.  Provide students with continued practice with **formatted IO**.
+3.	Familiarize students with **formatted IO**.
 
 ### Important Notes
-1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For your testing purposes, the autograder will be comparing your output to that of the example executable.
-2.	**Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted if no header comments are included.
-3.	**Filename**: Save your program as ```freezeria.c```
+1.	**Formatting**: Make sure that you follow the precise recommendations for the output content and formatting.
+2.	**Autograder**: For your testing purposes, the autograder will be comparing your output to that of the example executable. It _**will not**_ be used for grading.
+3.	**Filename**: Save your program as `snowfall.c`
 
 ## Program
-![erins_freezeria](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/f0488b64-b549-4505-9f39-cf808ab3d984)
-Let's build a game to test our ability to remember ice cream sundae orders.  
+Let it snow! Let's create a program to get a sample of snowfall data from this month.   
 
 ### The program should behave as follows
-The program should display a customer's order to the player. When the player is ready, the screen should clear and the player should be asked about the customer's order. After they enter it, the player's score is displayed.
+We'll get three data points from the user, which include an amount of snowfall in inches, a letter for the day of the week, and a number for the day of the month. For example  
+`Enter the first day's data (inches, day, date): 1.1 M 4`  
+`Enter the second day's data (inches, day, date): 2.2 W 6`  
+`Enter the third day's data (inches, day, date): 3.3 F 8`  
+
+The program should then display the data in the order and format demonstrated in the example program, along with the total and average snowfall amounts in inches.
 
 ## Requirements
-For this version of our game, the customer's order should always be the same:
-<img width="494" alt="image" src="https://github.com/CSE-UNR/cs135-pa1/assets/2504089/6656d936-6f2d-4aa4-98eb-72283a049462">  
-When the player types 'Y' for YES, the screen should clear (we went over how to do this in class).  
-
-Valid entries are outlined in the following table (only capital letters should be allowed):  
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/82dd6f6c-ef46-45f2-8154-ff02a7f4f755)
-
-Scoring for individual items is outlined in the following table:  
-![image](https://github.com/CSE-UNR/cs135-pa1/assets/2504089/c12eab1b-00c0-410e-9381-e07617a39d07)
-
-Final score tiers are outlined in the following table:  
-<img width="450" alt="image" src="https://github.com/CSE-UNR/cs135-pa1/assets/2504089/87f6ae9e-e17b-4ca9-b677-34672ff1475f">  
-
-After the player "makes" the order, they should see their score and some feedback.
+- Only use the tools we have gone over in class so far.
+  - Do not use strings or loops or ifs, etc.
+- Each day's values should be entered on one line and separated by a space, in the order specified above.
+  - You do not need to verify that the user entered correct values. Just assume they will abide by the format described.
+- Your program's table should match the example program's format.
+  - You must use field widths to help with the spacing in the table.
 
 ### Hints
-- Run the executable with all the combinations to see the messages you're supposed to display!
-- Use ```system("clear");``` to clear the screen in the Linux terminal.  
-- The ```system("clear");``` function requires the ```stdlib.h``` to be included in your program.
+- You have to write all of the code for displaying the table in your program.
+  - The vertical line `|` is called a pipe and is above the backslash on the keyboard.
+  - The thick borders are just multiple `=`.
+  - The thin borders are just multiple `-`.
+- You can use alternative letters for days with the same first letter. For example,
+  - Tuesday can be `T` and Thursday can be `R`.
+  - Saturday can be `S` Sunday can be `U`
   
-## Example Program Execution
-### An example executable is provided in this repository.
+## Example Program
+### An example executable (program) is provided in this repository.
 - You should be able to run it from your project folder in a Linux environment. 
 - If you encounter a “permission denied” error when attempting to run the executable, type  
-```chmod u+x freezeriaExecutable```  
+```chmod u+x snowfallExecutable```  
 into the terminal and try running the executable again.
  
-***These are just a few example of how the program should run. Your program should be able to handle any input that is entered in the correct format.***  
-When the player gets the order right:  
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/26368113-0cd9-47a3-a5ee-4439c6a3d862)  
-When the player gets it mostly right:  
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a6e5fb94-2da0-4150-82e1-90f604c5a23c)  
-When the player gets it all wrong:  
-![image](https://github.com/CSE-UNR/cs135-pa2/assets/2504089/a9cc42be-e2a0-4d6b-a391-b0596e044e2f)
-
 ## Submission Details
 If you are usinng git from the command line, execute the following commands:
 1.	After accepting the assignment invitation, copy the clone URL
