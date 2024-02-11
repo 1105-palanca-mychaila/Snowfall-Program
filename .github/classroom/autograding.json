@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "compile",
+      "setup": "",
+      "run": "gcc snowfall.c - snowfall",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "check your work",
+      "setup": "",
+      "run": "./snowfall",
+      "input": "1.65 W 10\r\n2.1 F 12\r\n0.77 U 14",
+      "output": "\r\n     ***Snowfall Table***\r\n=============================\r\n| DATE | WEEKDAY | SNOWFALL |\r\n|---------------------------|\r\n|  10  |    W    |   1.65   |\r\n|---------------------------|\r\n|  12  |    F    |   2.10   |\r\n|---------------------------|\r\n|  14  |    U    |   0.77   |\r\n|---------------------------|\r\n| TOTAL|             4.52   |\r\n|---------------------------|\r\n| AVG  |             1.51   |\r\n=============================",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
